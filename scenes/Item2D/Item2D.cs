@@ -26,15 +26,13 @@ public class Item2D : Node2D, IDraggable, IClickable
 
     public void OnInputEvent(Node node, InputEvent @event, int index)
     {
-        if (Input.IsActionPressed("mouse_interact"))
+        if (Input.IsActionJustPressed("mouse_interact"))
         {
-            GD.Print("drag");
             IsDragging = true;
             Offset = GetGlobalMousePosition() - GlobalPosition;
         }
         if (Input.IsActionJustReleased("mouse_interact"))
         {
-            GD.Print("free");
             IsDragging = false;
         }
     }

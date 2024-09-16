@@ -14,6 +14,15 @@ config/name="MutechGame"
 run/main_scene="res://scenes/GameUI/GameUI.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=1280
+window/size/height=960
+window/size/resizable=false
+window/size/test_width=640
+window/size/test_height=480
+window/stretch/mode="viewport"
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
